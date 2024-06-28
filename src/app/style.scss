@@ -8,6 +8,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  @media screen and (max-width: 1200px) {
+    height: auto;
+  }
 }
 .container
 {
@@ -21,6 +25,7 @@
   @media screen and (max-width: 992px){
     padding: 30px;
     width: 85%;
+    height: auto;
   }
 
   .row
@@ -29,10 +34,7 @@
   }
   h1
   {
-    font-size: 46px;
-    line-height: 1.5;
-    font-weight: 700;
-    letter-spacing: 2px;
+    @extend .main_head;
   }
   .sub_para
   {
@@ -60,6 +62,7 @@
     {
       font-size: 38px;
       color: red;
+      line-height: 42px;
     }
   }
 
