@@ -1,0 +1,67 @@
+@import "./utilities.scss";
+
+
+.main 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container
+{
+  width: 80%;
+  padding: 80px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 992px){
+    padding: 30px;
+    width: 85%;
+  }
+
+  .row
+  {
+    text-align: center;
+  }
+  h1
+  {
+    font-size: 46px;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .sub_para
+  {
+    @include para_design;
+    color: rgb(252, 114, 114);
+  }
+
+  .sub_para1
+  {
+    @extend .para;
+    color: orange;
+    font-size: 28px;
+    padding: 20px;
+    font-weight: 700;
+    word-spacing: 5px
+  }
+  .sub_para2
+  {
+    @extend .para;
+    color: rgb(54, 90, 0);
+  }
+
+
+  @media screen and (max-width: 992px){
+    h1
+    {
+      font-size: 38px;
+      color: red;
+    }
+  }
+
+}
